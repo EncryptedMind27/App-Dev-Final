@@ -1,0 +1,504 @@
+/*Font Embeds*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+        background-color: rgb(235, 255, 255);
+        padding: 0;
+        margin: 0;
+        
+}
+*{
+    font-family: 'Ubuntu';
+    scroll-behavior:smooth;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /*background-color: rgb(118, 58, 228);*/
+    transition: 0.6;
+    z-index: 5;
+    padding-top:20px;
+    padding-bottom: 20px;
+    transition: 0.4s;
+}
+
+header.sticky {
+    background-color: rgb(255, 198, 41);
+    padding: 0px;
+}
+
+.header #logo {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Poppins";
+    transition: 0.4;
+}
+
+.header ul {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul li {
+    position: relative;
+    padding-left: 20px;
+    font-size: large ;
+}
+
+.header ul li a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.header ul li #logout {
+    font-size: medium;
+    font-weight: 700;
+    color:rgb(235, 255, 255);
+    background-color: rgb(12, 41, 186);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px;
+    letter-spacing: 2px;
+    font-family: 'Poppins';
+    transition-duration: 0.3s;
+}
+
+.header ul li #logout:hover{
+    background-color: rgb(86, 114, 253);
+}
+
+#upload-section {
+    background-color: rgb(235, 255, 255);
+    height: 90vh;
+    padding-top: 110px;
+}
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
+    min-height: 435 px;
+    margin: auto;
+    background: linear-gradient(60deg, #4b1eff,#ed14d4);;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.header-section {
+    padding: 25px 0px;
+}
+
+.header-section h1 {
+    font-weight: 800;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: rgba(235,255,255);
+    margin: 0px; 
+    margin-bottom: 8px;
+    letter-spacing: 5px;
+}
+.header-section p{
+    margin: 5px;
+    font-size: 0.95rem;
+    color: rgb(224, 216, 216);
+} 
+
+.drop-section {
+    min-height: 250px;
+    border: 3px dashed rgba(89, 58, 74, 1);
+    background-image: linear-gradient(180deg, white, #f1f6ff);
+    margin: 5px 35px 35px 35px;
+    border-radius: 12px;
+    position: relative; 
+}
+
+.drop-section div.col:first-child {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 0.2s;
+    transform: scale(1);
+    width: 200px;
+    margin: auto;
+}
+
+.drop-section div.col:last-child{
+    font-size: 40px;
+    font-weight: 700;
+    color: #c0cae1;
+    position: absolute;
+    top: 0px;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 200px;
+    height: 55px;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.6);
+    transition-duration: 0.2s;
+}
+.drag-over-effect div.col:first-child{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(1.1);
+}
+.drag-over-effect div.col:last-child{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.drop-section .cloud-icon {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    opacity: 0.45;;
+}
+
+.drop-section span, .drop-section button {
+    display: block;
+    margin: auto;
+    color:#707ea0;
+    margin-bottom: 10px;
+}
+
+.drop-section button{
+    color: rgb(10,2,26);
+    background-color: rgba(250, 185, 65, 1);
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: rgba(50,50,93,0.25) 0px 13px 27px -5px, rgba(0,0,0,0.3) 0px 8px 16px -10px;
+}
+
+.drop-section input{
+    display: none;
+}
+
+.list-section {
+    display: none;
+    text-align: left;
+    margin: 0px 30px;
+    padding-bottom: 20px;
+}
+
+.list-section .list-title {
+    font-size: 0.95rem;
+   
+    color: rgba(10, 2, 26, 1);
+}
+
+.list-section li {
+    display: flex;
+    margin: 15px 0px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+}
+
+.list-section li:hover {
+    box-shadow: #49d417 0px 0px 4px 0px, #49d417 0px 2px 16px 0px;
+    background-color: rgb(191, 207, 236);
+}
+
+.list-section li .col {
+    flex: .1;
+}
+.list-section li .col:nth-child(1){
+    flex: 0.15;
+    text-align: center;
+    margin: auto;
+}
+.list-section li .col:nth-child(2){
+    flex: .75;
+    text-align: left;
+    font-size: 0.9rem;
+    color: rgba(10, 2, 26, 1);
+    padding: 8px 10px;
+}
+
+.list-section li .col:nth-child(2) div.name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.list-section li .col:nth-child(3){
+    display: grid;
+    place-items: center;
+}
+
+.list-section li .col:nth-child(3) i{   
+    display: grid;
+    place-items: center;
+    padding: 3px 3px 3px 3px;
+    height: 20px;
+    width: 20px;
+    color: rgb(248, 119, 21);
+    border-radius: 50%;
+}
+
+.list-section li .col:nth-child(3) .check-icon{
+    color: #8c00dc;
+}
+
+
+.list-section li .col .file-name span{
+    color: #0b1838;
+    float: right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.list-section li .file-progres {
+    width: 100%;
+    height: 5px;
+    margin-top: 8px;
+    border-radius: 8px;
+    background-color: #707ea0;
+}
+
+.list-section li .file-progress span {
+    display: block;
+    width: 50%;
+    height: 10px;
+    border-radius: 8px;
+    background-image: linear-gradient(120deg, #6b99fd, #9385ff);
+    transition-duration: 0.4s;
+}
+
+/* ----- SCROLL BAR IN HERE ----- */
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.list-section li.complete  span,
+.list-section li.complete .file-progress,
+.list-section li.complete .col:nth-child(3) .wrong-icon
+{
+    display: none; 
+}
+
+.list-section li.in-prog .file-size,
+.list-section li.in-prog .col:nth-child(3) .check-icon {
+    display: none;
+}
+
+#services-section {
+    height: 100vh; 
+    background-color: rgb(235,255, 255);
+    background-image: url(utls/blue-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -85px;
+}
+
+#contact-section {
+    height: 100vh;
+    background-color: rgb(235, 255, 255);
+}
+
+/* SEVICES SECTION*/
+
+#services-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#services-section .row .col {
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+    background-color: pink;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-section .row .col h4,
+#services-section .row .col p,
+#services-section .row .col img{
+    position: relative;
+    padding-top: 10px;
+    margin: 0;
+    z-index: 2;
+}
+
+#services-section .row .col h4,
+#services-section .row .col p {
+    position: relative;
+    top: -50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#services-section .row .col p{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+
+#services-section .row .col img {
+    position:absolute;
+    margin-top: 50px;
+    height: 200px;
+    z-index: 1;
+}
+
+
+#services-section .row .col #img1{
+   height: 300;
+   margin-top: 90px;
+}
+
+#services-section .row .col #affimg{
+    border-radius: 100px;
+    height: 170px;
+    margin-top: 90px;
+ }
+
+ #services-section .row .col #pqs-img{
+    height: 200px;
+    margin-top: 110px;
+ }
+
+ #services-section .row .col #ota-img{
+    border-radius: 5px;
+    height: 190px;
+    margin-top: 120px;
+ }
+
+ #services-section .row .col #pyw-img{
+    border-radius: 5px;
+    height: 250px;
+    margin-top: 120px;
+ }
+/*
+- Extended Hours
+- Doorstep Delivery
+- Affordable Rates
+- Open-Time Access
+- Premium Quality Services
+- Pay Your Way
+*/
+
+#contact-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#contact-section .cntHead p{
+    text-align: center;
+    padding: 0;
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#contact-section .containerCnt {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact-section .containerCnt .teleContact {
+    margin-top: 0;
+    padding-top: 0;
+    height: 300px;
+    width: 200px;
+    background-color: #9a6100;
+    margin: 50px;
+} 
+
+#contact-section .containerCnt .emailContact {
+    margin-top: 0;
+    padding-top: 0;
+    height: 300px;
+    width: 200px;
+    background-color: #3aff28;
+    margin: 50px;
+}   
+
+#contact-section .containerCnt .fbContact {
+    height: 300px;
+    width: 200px;
+    background-color: #601cff;
+    margin: 50px;
+}   
+
+#contact-section .containerCnt .fbContact,
+#contact-section .containerCnt .emailContact,
+#contact-section .containerCnt .teleContact {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 300px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px;
+} 
+
+#contact-section .containerCnt i {
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    margin-bottom: 300px;
+    background: rgb(235, 255, 255);
+    border-radius: 50px;
+}
+
+#contact-section .containerCnt .fbContact a
+#contact-section .containerCnt .emailContact a {
+    margin: 5px;
+}
+
+#contact-section .containerCnt .teleContact #tsst h3{
+    color: rgb(235,255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+#contact-section .containerCnt .emailContact a h1{
+    color: rgb(235,255, 255);
+    margin: 0;
+    padding: 10px;
+}

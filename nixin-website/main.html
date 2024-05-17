@@ -1,0 +1,165 @@
+
+<html lang="en">
+<head>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js"></script>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/dc323f625a.js" crossorigin="anonymous"></script>
+    <title>NIXIN-PRINTING-SERVICES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main-stylesheet.css">
+    <link rel="stylesheet" href="registration-form/reg-notif.css">
+    
+</head>
+<body>
+    <ul style="z-index: 9;" class="notifications"></ul>
+    <header class="header">
+        <a id="logo" href="">nixin printing services</a>
+        <ul class="nav-bar">
+            <li><a href="#upload-section">Upload</a></li>
+            <li><a href="#services-section">Feature</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+            <li><button id="logout">Logout</button></li>
+        </ul>
+    </header>
+
+    <section id="upload-section">
+        <div class="container">
+            <div class="header-section">
+                <h1>Upload Files</h1>
+                <p>Upload your files here to be printed and deliver.</p>
+                <p>Allowed: PDF, DOCX, PNG, JPEG</p>
+            </div>
+            <div class="drop-section">
+                <div class="col">
+                    <div class="cloud-icon">
+                        <i class="fas fa-cloud-upload-alt fa-5x"></i>
+                    </div>
+                    <span>Drag & Drop your files here</span>
+                    <span>OR</span>
+                    <button class="file-selector">Browse Files </button>
+                    <input type="file" class="file-selector-input" multiple>
+                </div>
+                <div class="col">
+                    <div class="drop-here">Drop Here</div>
+                </div>
+            </div>
+            <div class="list-section">
+                <div class="list-title">Uploaded Files</div>
+                <div class="list">
+                    <li class="complete">
+                        <div class="col">
+                            <i class="fas fa-file-alt fa-3x"></i>  
+                        </div>
+                        <div class="col">
+                            <div class="file-name"> 
+                                <div class="name"></div>
+                                <span>0%</span>
+                            </div>
+                            <div class="file-progress">
+                                <span></span>
+                            </div>
+                            <div class="file-size"></div>
+                        </div>
+                        <div class="col">
+                            <i class="fas fa-times wrong-icon"></i>
+                            <i class="fas fa-check check-icon"></i>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services-section">
+        <div class="row">
+            <div class="col">
+                <h4>Extended Hours</h4>
+                <p>We are operating up to critical time.</p>
+                <img id="img1" src="utls/DrawKit Vector Illustration Project Manager (7).svg" alt="">
+            </div>
+            <div class="col">
+                <h4>Doorstep Delivery</h4>
+                <p>You won't need to go out, we will deliver it to you.</p>
+                <img  src="utls/drawkit-transport-scene-11.svg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                
+                <h4>Premium Quality Services</h4>
+                <p>We provide top-tier quality products and services.</p>
+                <img id="pqs-img" src="utls/DrawKit Vector Illustration Black Friday & Online Shopping (1).svg" alt="">
+            </div>
+            <div class="col">
+                <h4>Pay Your Way</h4>
+                <p>We accept different Payment methods, Bank, Crypto and Cash-On-Delivery.</p>
+                <img id="pyw-img" src="utls/6 - FINANCES.svg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4>Affordable Rates</h4>
+                <p>Budget Friendly, for we offer quality products for affordable options.</p>
+                <img id="affImg" src="utls/DrawKit-Vector-Illustration-ecommerce-01.svg" alt="">
+            </div>
+            <div class="col">
+                <h4>Open-Time Access</h4>
+                <p>You can contact us anytime and anywhere, just drop and go.</p>
+                <img id="ota-img" src="utls/drawkit-transport-scene-3.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="cntHead"><p>
+            Get in touch.
+        </p></div>
+        <div class="containerCnt">
+            <div style="color: #9a6100;" class="col teleContact">
+                <i class="fas fa-phone fa-4x"></i>
+                <div id="tsst" style="display: flex; flex-direction: column; margin:0; padding: 0;">
+                         <h2 style="color: rgb(235, 255, 255);">Call us!</h3><br>
+                        <h3 style="color: rgb(235, 255, 255);">SMART: 0912-570-5117</h3><br>
+                        <h3 style="color: rgb(235, 255, 255);">TNT: 0963-074-1014</h3><br>
+                        <h3 style="color: rgb(235, 255, 255);">GLOBE: 0956-704-1565</h3><br>
+                        <h3 style="color: rgb(235, 255, 255);">TM: 0967-746-6899</h3>
+                </div>
+            </div>
+            <div style="color: #3eff28;" class="col emailContact">
+                <i class="fab fa-google fa-4x"></i>
+                <a id="emA" style="text-decoration: none;  color: rgb(235, 255, 255);" href="https://mail.google.com/mail/u/0/?ogbl#search/nixinprintingservices?compose=lqrsljbsgnKnlSXFwjpMXlPmScTfQPCzCqQMQWFZXZqgdlFFTKWPLNTTzzftgLRLDmzSVRmgcrbrNRffp" target="_blank"><h1>nixxinprintinsevicesemail</h1></a>
+            </div>
+            <div style="color: #601cff;" class="col fbContact">
+                <i  class="fab fa-facebook fa-4x"></i>
+                <a id="fbA" style="text-decoration: none;  color: rgb(235, 255, 255);"  href="https://web.facebook.com/61558554924764" target="_blank"><h1>nixxinprintinsevicesfb</h1></a>
+            </div>
+        </div>
+            
+        </section>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        import { getAuth } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+        import { getStorage } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js";
+
+        const app = initializeApp({
+            apiKey: "AIzaSyCVRB_FRFVlDtyikQo2Lfszbj_zrpo-nKM",
+            authDomain: "nixin-website-printing.firebaseapp.com",
+            databaseURL: "https://nixin-website-printing-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "nixin-website-printing",
+            storageBucket: "nixin-website-printing.appspot.com",
+            messagingSenderId: "485736135816",
+            appId: "1:485736135816:web:d9b641b4550c51c481733d"
+        })
+
+        const auth = getAuth(app);
+        const firestore = getFirestore(app);
+        const database = getDatabase(app);
+
+    </script>
+    <script type="module" src="registration-bcknd/fbc-auth.js"></script>
+    <script type="module" src="main-script.js"></script>
+    <script src="ui-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/dc323f625a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration-form/registration-form-stylesheet.css">
+    <link rel="stylesheet" href="registration-form/reg-notif.css">
+    <title>Rergistration</title>
+</head>
+<body>
+    <ul style="z-index: 9;" class="notifications"></ul>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="sign-in-email" value="" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="sign-in-password" value="" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" id="login-btn" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </form>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign Up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="sign-up-username" value="" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="sign-up-email" value="" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="sign-up-password" value="" placeholder="Password">
+                </div>
+                <input type="submit" id="register-btn" value="Register" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Already a Member?</h3>
+                    <p>Just login your account and start uploading.</p>
+                    <button class="btn" id="sign-in-btn">Sign In</button>
+                    <img src="registration-form/form-src/member.svg" alt="">
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Don't have an Account?</h3>
+                    <p>Be a member of our fast growing services and get your projects DONE!</p>
+                    <button class="btn" id="sign-up-btn">Sign Up</button>
+                    <img src="registration-form/form-src/noaccount.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        import { getAuth } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+
+        const app = initializeApp({
+            apiKey: "AIzaSyCVRB_FRFVlDtyikQo2Lfszbj_zrpo-nKM",
+            authDomain: "nixin-website-printing.firebaseapp.com",
+            databaseURL: "https://nixin-website-printing-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "nixin-website-printing",
+            storageBucket: "nixin-website-printing.appspot.com",
+            messagingSenderId: "485736135816",
+            appId: "1:485736135816:web:d9b641b4550c51c481733d"
+        })
+
+        const auth = getAuth(app);
+        const firestore = getFirestore(app);
+        const database = getDatabase(app);
+
+    </script>
+
+    <script type="module" src="registration-bcknd/fbc-auth.js"></script>
+    <script src="registration-form/reg-script.js"></script>
+</body>
+</html>
